@@ -1,0 +1,6 @@
+                                                                .:INTERFACE SEGREGATION PRINCIPLE:.
+
+El ISP afirma que "no se debe obligar a los clientes a depender de interfaces que no utilizan". Este principio está muy relacionado con el
+Principio de Responsabilidad Única. Lo que realmente significa es que siempre debe diseñar sus abstracciones de manera que los clientes que 
+utilizan los métodos expuestos no obtengan todo el pastel. Eso también incluye imponer a los clientes la carga de implementar métodos que en 
+realidad no necesitan.

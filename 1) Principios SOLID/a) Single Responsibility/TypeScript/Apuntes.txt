@@ -1,0 +1,8 @@
+                                                            .:SINGLE RESPONSIBILITY PRINCIPLE:.
+
+Como se indica en Clean Code, "Nunca debe haber más de una razón para cambiar una clase". Es tentador abarrotar una clase con mucha funcionalidad,
+como cuando solo puedes llevar una maleta en tu vuelo. El problema con esto es que su clase no será conceptualmente cohesiva y le dará muchas 
+razones para cambiar. Es importante minimizar la cantidad de tiempo que necesita para cambiar una clase. Es importante porque si hay demasiada
+funcionalidad en una clase y modifica una parte de ella, puede ser difícil entender cómo afectará eso a otros módulos dependientes en su base 
+de código.
+

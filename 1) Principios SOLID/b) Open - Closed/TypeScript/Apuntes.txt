@@ -1,0 +1,6 @@
+                                                               .:OPEN/CLOSED PRINCIPLE:.
+
+
+Como afirma Bertrand Meyer, "las entidades de software (clases, módulos, funciones, etc.) deben estar abiertas a la extensión, pero cerradas
+a la modificación". Pero, ¿qué significa eso? Este principio básicamente establece que debe permitir a los usuarios agregar nuevas funcionalidades
+sin cambiar el código existente.

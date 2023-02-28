@@ -1,0 +1,12 @@
+                                                                .:DEPENDENCY INVERSION PRINCIPLE:.
+
+Este principio establece dos cosas esenciales:
+
+* Los módulos de alto nivel no deben depender de los módulos de bajo nivel. Ambos deberían depender de abstracciones.
+
+* Las abstracciones no deben depender de los detalles. Los detalles deben depender de las abstracciones.
+
+Esto puede ser difícil de entender al principio, pero si ha trabajado con Angular, ha visto una implementación de este principio en forma
+de inyección de dependencia (DI). Si bien no son conceptos idénticos, DIP evita que los módulos de alto nivel conozcan los detalles de sus
+módulos de bajo nivel y los configuren. Puede lograr esto a través de DI. Un gran beneficio de esto es que reduce el acoplamiento entre módulos.
+El acoplamiento es un patrón de desarrollo muy malo porque hace que su código sea difícil de refactorizar.

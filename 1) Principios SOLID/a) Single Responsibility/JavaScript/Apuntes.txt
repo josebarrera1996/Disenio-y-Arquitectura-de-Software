@@ -1,0 +1,23 @@
+                                                            .:SINGLE RESPONSIBILITY PRINCIPLE:.
+
+Este es el primero de los principios SOLID y es uno de los más importantes. Su nombre indica: Principio de Responsabilidad Único
+
+'main1.js'
+
+En esta clase no se cumple el principio, ya que todas las clases, módulos, funciones, cualquier cosa dentro de nuestro código debería de tener 
+una sola 'responsabilidad'. Esto significa que solamente debería haber una sola razón para cambiar.
+
+Nuestro 'seguidor de calorías' tiene 2 razones por las cuales cambiaría:
+
+- Como realizamos el seguimiento a nuestras calorías consumidas con el método 'trackCalories()'
+- Como logeamos nuestras calorías con el método 'logCalorieSurplus()'
+
+
+'main2.js' 
+
+Para solucionar los problemas mencionados anteriormente se procedió a realizar lo siguiente: 
+
+- Crear un módulo 'logger.js' para que este tenga la responsabilidad única de logear en caso de que se excedan las calorías.
+
+De esta manera, la clase va a tener una responsabilidad única que es la de realizar el seguimiento de nuestras calorías consumidas.
+

@@ -1,0 +1,10 @@
+                                                               .:LISKOV SUBSTITUTION PRINCIPLE:.
+
+Este es un término aterrador para un concepto muy simple. Se define formalmente como "Si S es un subtipo de T, entonces los objetos de tipo T
+pueden reemplazarse con objetos de tipo S (es decir, los objetos de tipo S pueden sustituir a los objetos de tipo T) sin alterar ninguna de las
+propiedades deseables de ese programa (corrección, tarea realizada, etc.)". Esa es una definición aún más aterradora.
+
+La mejor explicación para esto es que si tiene una clase principal y una clase secundaria, entonces la clase principal y la clase secundaria
+se pueden usar indistintamente sin obtener resultados incorrectos. Esto aún puede ser confuso, así que echemos un vistazo al ejemplo clásico
+de Square-Rectangle. Matemáticamente, un cuadrado es un rectángulo, pero si lo modela utilizando la relación "es-un" a través de la herencia,
+rápidamente se mete en problemas.

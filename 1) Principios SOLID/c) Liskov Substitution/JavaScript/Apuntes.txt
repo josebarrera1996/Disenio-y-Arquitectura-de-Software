@@ -1,0 +1,27 @@
+                                                            .:LISKOV SUBSTITUTION PRINCIPLE:.
+
+Uno de los principios más importantes para aprender a escribir código que cumpla con lo que es la Programación Orientada a Objetos. 
+
+.:Definición:.
+
+Substitutability (sustituibilidad) es un principio en la 'Programación Orinetada a Objetos' que comparte que, en un programa de computadoras, 
+si 'S' es un subtipo de 'T', entonces los objetos de tipo 'T' pueden ser reemplazados con objetos de tipo 'S' (ej. un objeto de tipo T pueden
+ser sustituido con cualquier objeto de un subtitpo S) sin alterar cualquiera de las propiedades deseadas de un programa (exactitud, tareas
+realizadas, etc)
+
+Por ejemplo: 
+            - Tenemos una clase 'Animal' y en cada lugar donde la hemos utilizado podrías reemplazarla con alguna de sus subclases.
+              Tenemos la clase 'Dog' que hereda de la clase 'Animal', entonces en cualquier lugar que utilices esta última clase, 
+              deberías poder utilizar esta subclase y tendría que funcionar todo de forma correcta.
+
+
+'main1.js'
+
+Este es un ejemplo de no cumplimiento del principio. Básicamente porque a pesar de que tanto el pato como el pinguino son 'aves', el primero 
+puede 'volar' y 'nadar', mientras que el último solamente puede nadar.
+
+
+'main2.js'
+
+En este ejemplo si se cumple con el principio, ya que cada subclase puede aprovechar toda lo descripto en su respectiva clase 'padre'.
+

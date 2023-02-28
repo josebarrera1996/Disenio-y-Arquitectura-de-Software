@@ -1,0 +1,21 @@
+                                                                  .:INTERFACE SEGREGATION PRINCIPLE:.
+
+Este es el penúltimo principio de SOLID y uno de los más fáciles de entender.
+
+Este principio básicamente se trata de segregar nuestras interfaces y hacerlas más pequeñas.
+
+Otro detalle más es que las clases que implementen esas interfaces, deben de aprovechar todo su código.
+
+
+'main1'
+
+Este será un ejemplo utilizando JavaScript y es por ello que tendremos problemas ya que en este lenguaje no soporta 'interface', aun así servirá 
+de ejemplo ilustrativo de que trata este principio.
+
+En el mismo no se aplica este principio, ya que hay subclases (en esta ocasión) que no aplican todo lo desarrollado en la clase padre.
+
+
+'main2'
+
+En este ejemplo también se utilizó JavaScript y se dividó a las anteriores clases en pequeños componentes (para simular las que vendrían a ser 
+las interfaces) para que se pueda aplicar todo lo definido en la clase 'padre'.

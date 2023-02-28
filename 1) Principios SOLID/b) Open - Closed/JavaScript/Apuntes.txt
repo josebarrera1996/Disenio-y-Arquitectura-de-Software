@@ -1,0 +1,36 @@
+                                                                .:OPEN/CLOSED PRINCIPLE:.
+
+Se lo puede catalogar como el principio SOLID más difícil de entender si solo nos quedamos con su definición. 
+
+.:Definición:.
+
+En la programación orientada a objetos, el principio de abierto/cerrado establece que 'entidades de software (clases, módulos, funciones, etc)
+deberían estar abiertas para ser extendidas, pero cerradas en caso de modificación". es decir, dicha entidad puede permitir que su comportamiento 
+se extienda. sin modificar su código fuente.
+
+
+'main1.js'
+
+En este archivo no se cumple con el principio. 
+
+¿Qué pasaría si quisiéramos añadir una nueva pregunta al listado?
+
+De modo en el que esta desarrollada la lógica, se debería modificar el contenido del listado y el de la función que imprime el contenido 
+'printQuiz()'. Es aquí en donde no se cumple el principio, ya que esta función debería estar 'cerrada' y no 'abierta' a modificaciones.
+
+En resumidas cuentas, cuando estamos cambiando código que está 'fuera' no deberíamos nunca realizar cambios en el código dentro. Por lo tanto,
+este método 'printQuiz()' debería estar adaptado desde un principio para poder reaccionar a las modificaciones de afuera.
+
+
+'main2.js'
+
+La solución es sacar parte del contenido dentro de la instrucción 'switch' del método 'printQuiz()' y dividirlo en clases para que puedan manejar 
+las impresiones que se ejecutarán en ella, de esta manera estamos definiendo los 'tipos'
+
+No habrá necesidad de alterar el contenido del método principal, ya que si necesitamos nuevas preguntas solamente necesitaremos crear nuevas
+clases. Es decir, no modificamos 'printQuiz' (lo mantendremos cerrado), pero lo extenderemos a nuevas opciones si así se lo desea.
+
+.:Conclusión:.
+
+Este principio trata sobre que en vez de 'cambiar tu código' mejor 'crees nuevo' y este funcionará con tu código viejo para realizar distintas
+cosas.

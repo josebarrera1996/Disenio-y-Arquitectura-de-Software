@@ -1,0 +1,28 @@
+                                                            .:DEPENDENCY INVERSION PRINCIPLE:.
+
+Este es un principio basado en los estríctamente 'abstracto'.
+
+.:Ejemplo concreto:.
+
+Para entender mejor este principio abstracto se procederá a explicar un ejemplo concreto
+
+(imagen -> ejemplo-abstracto)
+
+* Tendremos una aplicación que permite a los usuarios comprar diferentes cosas de nuestro 'Store'.
+* La presencia de 2 API's: Stripe API y PayPal API, que nos servirán para realizar los pagos.
+* La presencia de un tipo de interfaz como 'Payment Processor' que contendrá todos los comportamientos que queremos que nuestra app pueda 
+  realizar. De esta manera 'Store' no dependerá de las 2 API's y se evitará código de más. 
+
+
+.:main1.js:.
+
+Este es un típico ejemplo de lo que no vamos a querer en nuestro código, porque si comenzamos a implementar un método de pago como 'Stripe' y
+luego, por distintas razones, queremos aplicar 'PayPal' deberemos estar cambiando prácticamente todo el comportamiento dependiendo de el método 
+de pago que vamos a utilizar.
+
+
+.:main2.js:.
+
+En este ejemplo se implementan los procesadores de pago para 'PayPal' y 'Stripe', con ellos evitaremos problemas cuando desde nuestro 'Store' 
+decidamos cual de ellos aplicar.
+
